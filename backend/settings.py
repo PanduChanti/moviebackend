@@ -136,6 +136,7 @@ CORS_ALLOW_ALL_ORIGINS: True
 
 
 CORS_ALLOWED_ORIGINS = [
-
-    'http://localhost:3000'
+    'https://watchingsite.netlify.app',
+    'https://www.watchingsite.netlify.app',
+    'http://www.watchingsite.netlify.app',
 ]
