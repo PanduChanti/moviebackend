@@ -8,9 +8,7 @@ from datetime import datetime
 
 class MovieDataBase(models.Model):
     title = models.CharField(max_length=255)
-    image = models.ImageField(upload_to="images/")
-    movie = models.CharField(max_length=255)
-    desc = models.CharField(max_length=955)
+    movie = models.FileField(upload_to="movie/")
     createdat = models.DateTimeField(default=datetime.now)
     language = models.CharField(max_length=255)
     genres = models.CharField(max_length=255)
